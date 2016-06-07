@@ -31,6 +31,10 @@ public class Televisor extends Electrodomestico{
 	public void setPoseeHDMI(Boolean poseeHDMI) {
 		this.poseeHDMI = poseeHDMI;
 	}
+	
+	public void setPoseeHDMI(String poseeHDMI) {
+		poseeHDMI = poseeHDMI;
+	}
 
 
 }
