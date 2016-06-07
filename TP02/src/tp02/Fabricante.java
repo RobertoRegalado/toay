@@ -13,7 +13,13 @@ public class Fabricante {
 		
 	}
 
-
+	public Fabricante(String _nombre, String _telefono, String _direccion) {
+		
+		nombre = _nombre;
+		telefono = _telefono;
+		direccion = _direccion;
+		
+	}
 
 	public String getNombre() {
 		return nombre;

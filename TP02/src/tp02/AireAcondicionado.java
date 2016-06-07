@@ -9,6 +9,12 @@ public class AireAcondicionado extends Electrodomestico{
 		
 		
 	}
+	
+	public AireAcondicionado(Integer _frigorias) {
+		// TODO Auto-generated constructor stub
+		
+		frigorias = _frigorias;
+	}
 
 	public Integer getFrigorias() {
 		return frigorias;
