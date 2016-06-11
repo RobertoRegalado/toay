@@ -23,6 +23,10 @@ public class Televisor extends Electrodomestico{
 	public void setPulgadas(Integer pulgadas) {
 		this.pulgadas = pulgadas;
 	}
+	
+	public void setPulgadas(String pulgadas) {
+		this.pulgadas = Integer.valueOf(pulgadas);
+	}
 
 	public Boolean getPoseeHDMI() {
 		return poseeHDMI;
@@ -31,7 +35,9 @@ public class Televisor extends Electrodomestico{
 	public void setPoseeHDMI(Boolean poseeHDMI) {
 		this.poseeHDMI = poseeHDMI;
 	}
-
-
+	
+	public void setPoseeHDMI(String poseeHDMI) {
+		this.poseeHDMI = Boolean.valueOf(poseeHDMI);
+	}
 
 }

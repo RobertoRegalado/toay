@@ -30,7 +30,7 @@ public class Electrodomestico {
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
 	}
-
+	
 
 	public String getModelo() {
 		return modelo;
@@ -50,6 +50,10 @@ public class Electrodomestico {
 	public void setPrecio(Double precio) {
 		this.precio = precio;
 	}
+	
+	public void setPrecio(String precio) {
+		this.precio = Double.valueOf(precio);
+	}
 
 
 	public Integer getStock() {
@@ -59,6 +63,9 @@ public class Electrodomestico {
 
 	public void setStock(Integer stock) {
 		this.stock = stock;
+	}
+	public void setStock(String stock) {
+		this.stock = Integer.valueOf(stock);
 	}
 
 }

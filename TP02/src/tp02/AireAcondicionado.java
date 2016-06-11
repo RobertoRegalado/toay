@@ -23,5 +23,14 @@ public class AireAcondicionado extends Electrodomestico{
 	public void setFrigorias(Integer frigorias) {
 		this.frigorias = frigorias;
 	}
-
+	
+	public void setFrigorias(String frigorias) {
+		this.frigorias = Integer.valueOf(frigorias);
+	}
+	
+	//public String toString(){
+		
+		
+	//}
+	
 }
