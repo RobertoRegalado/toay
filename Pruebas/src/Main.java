@@ -3,9 +3,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class main {
+public class Main {
 
-	public main() {
+	public Main() {
 		// TODO Auto-generated constructor stub
 	}
 	public static void main(String[] args) throws IOException 
@@ -30,13 +30,19 @@ public class main {
 	*/
 	lista.add(new Integer(i+1));
 	System.out.println("Tamanio lista en carga: " + lista.size());
-
+	
 	}
-
+	
 	for(int i = 0; i < lista.size(); i++)
 	{
 	System.out.println("Lista en i: " + i + " valor: " + lista.get(i));
 	}
+	
+	//For each recorre la lista codigo resumido
+	for(Integer nro:lista){
+		System.out.println(nro);
+	}
+	
 
 	//Integer nro;
 	for(int i = 0; i < 10; i++)
