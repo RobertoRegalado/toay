@@ -67,5 +67,9 @@ public class Electrodomestico {
 	public void setStock(String stock) {
 		this.stock = Integer.valueOf(stock);
 	}
+	
+	public String decirtipo(){
+		return "";
+	}
 
 }

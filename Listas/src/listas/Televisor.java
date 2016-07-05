@@ -40,4 +40,8 @@ public class Televisor extends Electrodomestico{
 		this.poseeHDMI = Boolean.valueOf(poseeHDMI);
 	}
 
+	public String decirtipo(){
+		return "Soy un Televisor";
+	}
+	
 }

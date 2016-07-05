@@ -28,6 +28,10 @@ public class AireAcondicionado extends Electrodomestico{
 		this.frigorias = Integer.valueOf(frigorias);
 	}
 	
+	public String decirtipo(){
+		return "Soy un Aire Acondicionado";
+	}
+	
 	//public String toString(){
 		
 		

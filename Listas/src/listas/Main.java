@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import listas.AireAcondicionado;
+import listas.Televisor;
+
 public class Main {
 
 	public Main() {
@@ -16,11 +19,37 @@ public class Main {
 	public static void main(String[] args) throws IOException 
 	{
 
+
+		
+		List<Electrodomestico> listaE = new ArrayList<Electrodomestico>(); //creo lista de electrodomesticos
+		
+		//creo electrodomesticos
+		Televisor tele1 = new Televisor();
+		Televisor tele2 = new Televisor();
+		AireAcondicionado aire1 = new AireAcondicionado();
+		AireAcondicionado aire2 = new AireAcondicionado(); 
+		
+		//cargo electrodomesticos en la lista
+		listaE.add(tele1);
+		listaE.add(aire1);
+		listaE.add(tele2);
+		listaE.add(aire2);		
+		
+		//imprime en pantalla el tipo de cada electrodomestico
+		for(Electrodomestico temp:listaE){
+			System.out.println(temp.decirtipo());
+		}
+		
+		
+		/*
+		
 		List<Fabricante> listaF = new ArrayList<Fabricante>(); //declaro una lista de tipo Fabricante
 		List<Televisor> listaT = new ArrayList<Televisor>(); //declaro una lista de tipo Televisor
 		List<AireAcondicionado> listaA = new ArrayList<AireAcondicionado>(); //declaro una lista de tipo Televisor
 		
-		for(int i=1;i<3;i++){
+		
+		
+		for(int i=1;i<5;i++){
 		
 				
 				//Fabricante
@@ -65,8 +94,9 @@ public class Main {
 		
 		}
 		
+		
 		//muestra en pantalla lo cargado anteriormente
-		for(int i=0;i<2;i++){
+		for(int i=0;i<4;i++){
 
 				System.out.println("");
 				System.out.println("Fabricante "+i);
@@ -86,16 +116,17 @@ public class Main {
 				System.out.println("Precio: "+listaA.get(i).getPrecio());
 				System.out.println("Stock: "+listaA.get(i).getStock());
 				System.out.println("Frigorias: "+listaA.get(i).getFrigorias());
-			}
+		}
 		
+
 	}
-		
-	
+
 		
 	private static String leeteclado() throws IOException{
 		//Captura string de teclado y lo almacena en variable
 		String entrada = (new BufferedReader(new InputStreamReader(System.in))).readLine();
 		return entrada;
+	*/
 	}
 	
 }
